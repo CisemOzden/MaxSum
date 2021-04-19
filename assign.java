@@ -32,6 +32,10 @@ class assign {
                         if(!temp.isEmpty()){
                             pyr[i][j] += Collections.max(temp);
                         }
+                        else{ //to reach the lowest row of the pyramid
+                            pyr[i][j] =0;
+                        }
+                
     
                     }
                     else{ //the number is not considered if it is not prime
@@ -118,14 +122,8 @@ class assign {
                 }
             }
 
-            for(int i=0; i<N; i++){
-                for(int j=0; j<N; j++){
-                    System.out.print(matrix[i][j]+" ");
-                }
-                System.out.println();
-            }
-
         System.out.println(maxSum(matrix, N-1));
+       
     } 
 } 
   
